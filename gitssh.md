@@ -1,54 +1,56 @@
-##### ÉèÖÃGithubµÄuser name ºÍemial
+##### è®¾ç½®Githubçš„user name å’Œemial
 
-* ´ò¿ª Git Bash£¬ÊäÈëÈçÏÂÃüÁî
+* æ‰“å¼€ Git Bashï¼Œè¾“å…¥å¦‚ä¸‹å‘½ä»¤
  
 ```
-$ git config --global user.name "ÓÃ»§Ãû"
-$ git config --global user.email "ÓÊÏä"
+$ git config --global user.name "ç”¨æˆ·å"
+$ git config --global user.email "é‚®ç®±"
 ```
 
-* ÉèÖÃÍêÁË£¬¿ÉÒÔÍ¨¹ıÏÂÃæÃüÁîĞĞ²é¿´gitÅäÖÃ
+* è®¾ç½®å®Œäº†ï¼Œå¯ä»¥é€šè¿‡ä¸‹é¢å‘½ä»¤è¡ŒæŸ¥çœ‹gité…ç½®
 
 ```
 $ git config --list
 ```
 
 
-* ÅäÖÃSSH key
+* é…ç½®SSH key
 
-²é¿´±¾»úÊÇ·ñ´æÔÚSSH keys,´ò¿ªGit Bash,²¢ÔËĞĞ:
+æŸ¥çœ‹æœ¬æœºæ˜¯å¦å­˜åœ¨SSH keys,æ‰“å¼€Git Bash,å¹¶è¿è¡Œ:
 
 ```
 cd ~/.ssh
 ```
 
-Èç¹û²»´æÔÚÔòÌáÊ¾£º No such file or directory
-Èç¹ûÒÑ¾­´æÔÚÁËÔò½øÈë~/.sshÄ¿Â¼£¬±¸·İµ±Ç°key£¨.sshÄ¿Â¼£©£¬È»ºóÉ¾³ı¡£
+å¦‚æœä¸å­˜åœ¨åˆ™æç¤ºï¼š No such file or directory
+å¦‚æœå·²ç»å­˜åœ¨äº†åˆ™è¿›å…¥~/.sshç›®å½•ï¼Œå¤‡ä»½å½“å‰keyï¼ˆ.sshç›®å½•ï¼‰ï¼Œç„¶ååˆ é™¤ã€‚
 
-* ÔÙGti bashÀïÊäÈëÏÂÃæÃüÁî£¬Éú²ússh key
+* å†Gti bashé‡Œè¾“å…¥ä¸‹é¢å‘½ä»¤ï¼Œç”Ÿäº§ssh key
+```
 $ ssh-keygen -t rsa -C "your_email@example.com"
-ÖĞ¼ä»áÓĞÈı´ÎÌáÊ¾ÊäÈë£¬·Ö±ğ±íÊ¾keyµÄ±£´æÄ¿Â¼ÔÙ£¬Ë½Ô¿ÃÜÂë£¬Ë½Ô¿È·ÈÏÃÜÂë
-ÕâÈı´Î¶¼¿ÉÒÔÖ±½ÓÇÃ»Ø³µ¼´¿É¡£
+```
+ä¸­é—´ä¼šæœ‰ä¸‰æ¬¡æç¤ºè¾“å…¥ï¼Œåˆ†åˆ«è¡¨ç¤ºkeyçš„ä¿å­˜ç›®å½•å†ï¼Œç§é’¥å¯†ç ï¼Œç§é’¥ç¡®è®¤å¯†ç 
+è¿™ä¸‰æ¬¡éƒ½å¯ä»¥ç›´æ¥æ•²å›è½¦å³å¯ã€‚
 
-Ö±½ÓÇÃ»Ø³µÉú³ÉµÄÃÜÔ¿Â·¾¶£ºC:\Users\xbting.ssh
+ç›´æ¥æ•²å›è½¦ç”Ÿæˆçš„å¯†é’¥è·¯å¾„ï¼šC:\Users\xbting.ssh
 
-½øÈëC:\Users\xbting.sshÄ¿Â¼£¬´ò¿ªid_rsa.pub£¬¸´ÖÆÀïÃæµÄkey£¬¸´ÖÆkey
-»Øµ½gitub£¬½øÈë Account Settings£¨ÕË»§ÅäÖÃ£©£¬×ó±ßÑ¡ÔñSSH Keys£¬Add SSH Key,titleËæ±ãÌî£¬Õ³ÌùÔÚÄãµçÄÔÉÏÉú³ÉµÄkey¡£
+è¿›å…¥C:\Users\xbting.sshç›®å½•ï¼Œæ‰“å¼€id_rsa.pubï¼Œå¤åˆ¶é‡Œé¢çš„keyï¼Œå¤åˆ¶key
+å›åˆ°gitubï¼Œè¿›å…¥ Account Settingsï¼ˆè´¦æˆ·é…ç½®ï¼‰ï¼Œå·¦è¾¹é€‰æ‹©SSH Keysï¼ŒAdd SSH Key,titleéšä¾¿å¡«ï¼Œç²˜è´´åœ¨ä½ ç”µè„‘ä¸Šç”Ÿæˆçš„keyã€‚
 
-ÎªÁËÑéÖ¤ÊÇ·ñ³É¹¦£¬¿ÉÔÚgit bashÀïÊäÈëÏÂÃæÃüÁî£º
+ä¸ºäº†éªŒè¯æ˜¯å¦æˆåŠŸï¼Œå¯åœ¨git bashé‡Œè¾“å…¥ä¸‹é¢å‘½ä»¤ï¼š
 
 ``` 
 $ ssh -T git@github.com 
 ```
 
 
-##### Èç¹ûÊÇµÚÒ»´ÎµÄ»áÌáÊ¾ÊÇ·ñcontinue£¬ÊäÈëyes¾Í»á¿´µ½£º
-You've successfully authenticated, but GitHub does not provide shell access ¡£
+##### å¦‚æœæ˜¯ç¬¬ä¸€æ¬¡çš„ä¼šæç¤ºæ˜¯å¦continueï¼Œè¾“å…¥yeså°±ä¼šçœ‹åˆ°ï¼š
+You've successfully authenticated, but GitHub does not provide shell access ã€‚
 
-±íÃ÷ÒÑ³É¹¦Á¬ÉÏgithub£¬githubÅäÖÃssh³É¹¦
+è¡¨æ˜å·²æˆåŠŸè¿ä¸Šgithubï¼Œgithubé…ç½®sshæˆåŠŸ
 
-×÷Õß£ºHifate
-Á´½Ó£ºhttps://www.jianshu.com/p/861f1ce33f6a
-íÔ´£º¼òÊé
-¼òÊéÖø×÷È¨¹é×÷ÕßËùÓĞ£¬ÈÎºÎĞÎÊ½µÄ×ªÔØ¶¼ÇëÁªÏµ×÷Õß»ñµÃÊÚÈ¨²¢×¢Ã÷³ö´¦¡£
+ä½œè€…ï¼šHifate
+é“¾æ¥ï¼šhttps://www.jianshu.com/p/861f1ce33f6a
+ä¾†æºï¼šç®€ä¹¦
+ç®€ä¹¦è‘—ä½œæƒå½’ä½œè€…æ‰€æœ‰ï¼Œä»»ä½•å½¢å¼çš„è½¬è½½éƒ½è¯·è”ç³»ä½œè€…è·å¾—æˆæƒå¹¶æ³¨æ˜å‡ºå¤„ã€‚
 
