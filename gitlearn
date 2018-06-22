@@ -1,0 +1,55 @@
+git config --global user.name "chunlin99x"
+git config --global user.email "2722552441@qq.com"
+# 第一次使用git需要的全局配置
+
+mkdir xx ：创建一个空目录 xx 指定目录名称
+pwd: 显示当前目录的路径
+git init: 把当前的目录编程可以管理的git仓库，成程隐藏的.git文件
+touch xx : 新建xx 文件
+git add xx ： 把xx文件添加到暂存区中
+git commit -m "xxxxx" a.txt :提交文件 -m 后面的是注释
+git status: 查看仓库状态   
+	如果文件是红色，表示这个文件还在工作区
+	还有缓存区 
+	
+git log:查看历史记录
+git reset --hard HEAD^: 往上回退一个版本
+
+git reset --hard 8346723: 穿梭到指定的版本上
+cat xx: 查看xx文件内容
+git reflog:查看历史记录的版本号id
+git checkout -- xx 把xx文件在工作区的修改全部撤销
+git rm xx: 删除xx文件之后commit
+git remote add origin https://github.com/qiuhaifeng01/a.git 关联一个远程库
+git push -u (第一次要用 -u , 以后不用) origin master:把当前master分支推送到远程库
+git clone https://github.com/xxx 从远程库中克隆
+git checkout -b dev: 创建dev分支 并且切换到dev分支上
+git branch 查看当前所有分支
+git merge dev : 在当前分支合并dev分支
+git branch -d dev : 删除dev分支
+git branch xxx: 创建xxx分支
+git remote 查看远程仓库的信息
+git remote -v 查看远程库的详细的信息
+git push origin master: git 会把master分支推送到远程库对应的分支上
+
+
+版本的撤销
+	表示这个文件还没有提交，文件还在你的工作区中。
+
+
+工作区
+	就是你电脑本地硬盘目录
+版本库
+	工作区有个隐藏目录.git 他就是git的本地版本库
+暂存区
+ 一般存放在git目录下的index文件中，所以我们把暂存区有事也叫做索引
+ git为我们自动创建了第一个分master,以及执行master的一个指针叫HEAD
+
+ 不要在master分支中提交代码
+
+ 
+git pull --rebase origin master
+
+git push -u origin master
+
+
